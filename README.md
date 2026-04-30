@@ -16,6 +16,8 @@ Designed to run continuously on a Raspberry Pi 5 or similar, containerized with 
 - **Scheduled runs** via APScheduler (configurable hours, e.g. `8,18` for 8 AM and 6 PM UTC)
 - **Docker-first**: single `docker compose up -d` deployment
 
+**NOTE:** You don't need docker to run the pipeline, you can instead download the repository and run it using a .venv instance with your local Python environment (3.11 to 3.13 were tested.)
+
 ---
 
 ## Architecture
