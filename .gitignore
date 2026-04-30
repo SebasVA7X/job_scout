@@ -1,0 +1,16 @@
+.env
+*.db
+data/
+logs/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.idea/
+.vscode/
+*.egg-info/
+dist/
+build/
+tests/
+.claude/
