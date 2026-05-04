@@ -8,7 +8,7 @@ Deveoped along with ClaudeCode, designed to run continuously on a Raspberry Pi 5
 
 ## Features
 
-- **15+ scrapers** covering UN agencies, World Bank, IMF, IDB, ImpactPool, LinkedIn/Indeed/Glassdoor, and more
+- **15+ scrapers** covering UN agencies, World Bank, IMF, IDB, ImpactPool, LinkedIn, and more
 - **Two-stage filtering**: fast keyword gate before the more expensive LLM call
 - **AI scoring** via Claude Haiku (Anthropic) or Ollama (qwen2.5:7b) — every job gets a 0–100 score with reasoning, based on a detailed candidate profile
 - **Telegram alerts** for top matches (≥80), Excel digest for good-but-not-top matches (40–79)
