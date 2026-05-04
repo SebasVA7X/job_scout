@@ -31,7 +31,7 @@ scorer/
   keyword_filter.py        Pre-LLM keyword scoring and blacklist gate
   llm_scorer.py            Public scoring API
   backends/
-    anthropic_backend.py   Batch Claude API calls (15 jobs/request)
+    anthropic_backend.py   Batch Claude API calls
     ollama_backend.py      Local Ollama fallback
     prompts.py             Candidate profile and scoring instructions
 db/
@@ -46,7 +46,7 @@ config/settings.py         Centralized config loaded from .env
 ```
 SCRAPE → FILTER (keyword gate) → UPSERT to jobs_raw
        → CLEAN titles + map categories → UPSERT to jobs_cleaned
-       → LLM SCORE (Claude, batches of 15)
+       → LLM SCORE (Claude or Ollama)
        → NOTIFY via Telegram (alerts + digest)
 ```
 
@@ -56,7 +56,7 @@ SCRAPE → FILTER (keyword gate) → UPSERT to jobs_raw
 
 | Category | Sources |
 |---|---|
-| General job boards | LinkedIn, Indeed (via JobSpy, 50+ searches) |
+| General job boards | LinkedIn,(via JobSpy, 50+ searches) |
 | UN system | UN Careers, UNHCR, UNDP, UNV, WFP, IOM |
 | Financial / multilateral | IMF, World Bank\*, IDB, BIS, OAS |
 | Other international | OPCW, ACLED |
