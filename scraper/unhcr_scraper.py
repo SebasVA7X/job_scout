@@ -33,7 +33,7 @@ SEARCH_KEYWORDS = [
     "information management",
     "business intelligence",
     "information technology",
-    "operational data management"
+    "operational data management",
     "statistics",
     "economist",
     "analytics",
